@@ -1,0 +1,514 @@
+
+ <!DOCTYPE html>
+  <html lang="en" class="no-js">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>http://space-man.de news</title>
+      <meta name="description" content="News Gallery" />
+      <meta name="keywords" content="news, alien, ufos , truth" />
+      <meta name="author" content="santex" />
+      <link rel="shortcut icon" href="../favicon.ico">
+
+      <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+      <link href="/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="/assets/css/news.css" />
+      <link rel="stylesheet" type="text/css" href="/assets/css/newscomponent.css" />
+      <script src="/assets/js/modernizr.custom.js"></script>
+      <style>
+        .red{color:#ff0000;}
+        .yellow{color:#fff000;}
+      small{
+        color:#000;
+
+      }
+      a{
+        color:#000;
+      }
+
+#global-tax-box {
+background: hsl(0, 100%, 100%);
+border-radius: 5px 5px 0 0;
+border: 1px solid hsl(345, 27%, 74%);
+bottom: -3px;
+color: hsl(0, 0%, 0%);
+font-size: 0.85em;
+opacity: 1;
+max-height:15%;
+min-height:32px;
+padding: 4px 4px 1px;
+x-overflow: hidden;
+position: fixed;
+width:90%;
+left: 5%;
+bottom:5px;
+text-align: left;
+y-overflow:scrolling;
+z-index: 9999;
+zoom:110%;
+}
+
+      </style>
+    </head>
+    <body>
+      <div class="container">
+
+      <header class="clearfix">
+<div class="pull-left">    <h1>news gallery</h1></div>
+          <nav>
+
+            <div class="home"><a href="http://space-man.de" class="bp-icon bp-icon-next" data-info="go to http://space-man.de"><span>Home</span></a></div>
+          </nav>
+        </header>
+      </div>
+<center>
+    <div class="input-group">
+      <input class="form-control input-lg" type="text" id="glyph-search" placeholder="Search the tweets">
+      <span class="input-group-addon"><i class="fa fa-fw fa-lg fa-search"></i></span>
+    </div>
+</center>
+      <div>
+
+
+
+<center>
+
+
+</center>
+<hr>
+        <div id="grid-gallery" class="grid-gallery">
+          <div class="red info-keys icon">Press<br>images for twitter<br>text to slide</div>
+
+          <section class="grid-wrap">
+            <ul class="grid">
+              <li class="grid-sizer"></li><!-- for Masonry column width -->
+  <?php
+
+
+  print($rounds[0]);
+  ?>
+
+            </ul>
+
+ <center>
+
+<?php
+
+
+  echo $nav;
+  ?>
+
+</center>
+
+          </section><!-- // grid-wrap -->
+          <section class="slideshow">
+            <ul>
+<?php print($rounds[1]); ?>
+            </ul>
+            <nav>
+              <span class="icon nav-prev"></span>
+              <span class="icon nav-next"></span>
+              <span class="icon nav-close"></span>
+            </nav>
+            <div class="info-keys icon">Navigate<br>with arrow keys</div>
+
+          </section><!-- // slideshow -->
+        </div><!-- // grid-gallery -->
+      </div>
+      <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+      <script src="/assets/js/masonry.pkgd.min.js"></script>
+      <script src="/assets/js/news.js"></script>
+      <script src="/assets/js/cbpGridGallery.js"></script>
+      <script>
+
+    var photos = [
+    {'name':'/scoope/brain/alpha-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brain/alpha-brainwave-cymascope.jpg'},
+{'name':'/scoope/brain/beta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brain/beta-brainwave-cymascope.jpg'},
+{'name':'/scoope/brain/beta-brainwave-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brain/beta-brainwave-rainbow-cymascope.jpg'},
+{'name':'/scoope/brain/delta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brain/delta-brainwave-cymascope.jpg'},
+{'name':'/scoope/brain/theta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brain/theta-brainwave-cymascope.jpg'},
+{'name':'/scoope/brainwave/alpha-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brainwave/alpha-brainwave-cymascope.jpg'},
+{'name':'/scoope/brainwave/beta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brainwave/beta-brainwave-cymascope.jpg'},
+{'name':'/scoope/brainwave/beta-brainwave-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brainwave/beta-brainwave-rainbow-cymascope.jpg'},
+{'name':'/scoope/brainwave/delta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brainwave/delta-brainwave-cymascope.jpg'},
+{'name':'/scoope/brainwave/theta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/brainwave/theta-brainwave-cymascope.jpg'},
+{'name':'/scoope/chakras/chakra-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/chakra-rainbow-cymascope.jpg'},
+{'name':'/scoope/chakras/chakra-sacred-sounds-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/chakra-sacred-sounds-cymascope.jpg'},
+{'name':'/scoope/chakras/crown-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/crown-chakra-cymascope.jpg'},
+{'name':'/scoope/chakras/navel-sacral-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/navel-sacral-chakra-cymascope.jpg'},
+{'name':'/scoope/chakras/root-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/root-chakra-cymascope.jpg'},
+{'name':'/scoope/chakras/solar-plexus-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/chakras/solar-plexus-chakra-cymascope.jpg'},
+{'name':'/scoope/external/10151125_10152056913298907_1032356906_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10151125_10152056913298907_1032356906_n.jpg'},
+{'name':'/scoope/external/10154285_737827792936388_2932903979140763205_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10154285_737827792936388_2932903979140763205_n.jpg'},
+{'name':'/scoope/external/10157296_10152072008063907_6179605511928741179_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10157296_10152072008063907_6179605511928741179_n.jpg'},
+{'name':'/scoope/external/10171175_239125116278754_6661072998297005497_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10171175_239125116278754_6661072998297005497_n.jpg'},
+{'name':'/scoope/external/10177308_10152120250043907_2590312665989021418_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10177308_10152120250043907_2590312665989021418_n.jpg'},
+{'name':'/scoope/external/10177874_245724162285516_1368333221578440950_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10177874_245724162285516_1368333221578440950_n.jpg'},
+{'name':'/scoope/external/10178046_237656056425660_8967729276323977710_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10178046_237656056425660_8967729276323977710_n.jpg'},
+{'name':'/scoope/external/10308331_322854967905768_7700104007421874831_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10308331_322854967905768_7700104007421874831_n.jpg'},
+{'name':'/scoope/external/10310592_10152519073748907_2215878638616793335_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10310592_10152519073748907_2215878638616793335_n.jpg'},
+{'name':'/scoope/external/10313583_252567824934483_3318578007632348753_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10313583_252567824934483_3318578007632348753_n.jpg'},
+{'name':'/scoope/external/10314476_652698524852604_7559304867781272418_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10314476_652698524852604_7559304867781272418_n.jpg'},
+{'name':'/scoope/external/10325556_10152170071538907_6593370478656277182_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10325556_10152170071538907_6593370478656277182_n.jpg'},
+{'name':'/scoope/external/10368383_803720779680422_9176319856188561999_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10368383_803720779680422_9176319856188561999_n.jpg'},
+{'name':'/scoope/external/10377537_10152276146843907_8685675792046566936_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10377537_10152276146843907_8685675792046566936_n.jpg'},
+{'name':'/scoope/external/10428463_10152222092948907_8923932421047402903_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10428463_10152222092948907_8923932421047402903_n.jpg'},
+{'name':'/scoope/external/10446641_265860993605166_7597207961628986766_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10446641_265860993605166_7597207961628986766_n.jpg'},
+{'name':'/scoope/external/10458368_10203783262891657_731904907504798178_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10458368_10203783262891657_731904907504798178_n.jpg'},
+{'name':'/scoope/external/1047.jpg','url':'http://santex.github.io/cymatics/scoope/external/1047.jpg'},
+{'name':'/scoope/external/10489714_807359642630466_8425223289609126062_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10489714_807359642630466_8425223289609126062_n.jpg'},
+{'name':'/scoope/external/10559808_10205396922303034_5053163227252326226_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10559808_10205396922303034_5053163227252326226_n.jpg'},
+{'name':'/scoope/external/10574526_323608414497090_292804415801452894_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10574526_323608414497090_292804415801452894_n.jpg'},
+{'name':'/scoope/external/1057.jpg','url':'http://santex.github.io/cymatics/scoope/external/1057.jpg'},
+{'name':'/scoope/external/10603628_10204290483080874_4906402519751372397_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10603628_10204290483080874_4906402519751372397_n.jpg'},
+{'name':'/scoope/external/10603717_797878110262718_7804135662206123883_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10603717_797878110262718_7804135662206123883_n.jpg'},
+{'name':'/scoope/external/10604840_286050811586184_286050751586190_50710_665_b.jpg','url':'http://santex.github.io/cymatics/scoope/external/10604840_286050811586184_286050751586190_50710_665_b.jpg'},
+{'name':'/scoope/external/10641269_1552865818262055_5299849186996289703_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10641269_1552865818262055_5299849186996289703_n.jpg'},
+{'name':'/scoope/external/10641292_813868265332340_887268944848325761_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10641292_813868265332340_887268944848325761_n.jpg'},
+{'name':'/scoope/external/10677694_315937431930855_315937015264230_48077_2707_b.jpg','url':'http://santex.github.io/cymatics/scoope/external/10677694_315937431930855_315937015264230_48077_2707_b.jpg'},
+{'name':'/scoope/external/10677968_283841735140425_283841398473792_10377_2338_b.jpg','url':'http://santex.github.io/cymatics/scoope/external/10677968_283841735140425_283841398473792_10377_2338_b.jpg'},
+{'name':'/scoope/external/10730865_301614333363165_9220810125900458637_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10730865_301614333363165_9220810125900458637_n.jpg'},
+{'name':'/scoope/external/10733957_10152484638643907_6770208905586206984_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10733957_10152484638643907_6770208905586206984_n.jpg'},
+{'name':'/scoope/external/10805813_10152511805058907_1017937786912208360_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10805813_10152511805058907_1017937786912208360_n.jpg'},
+{'name':'/scoope/external/1083.jpg','url':'http://santex.github.io/cymatics/scoope/external/1083.jpg'},
+{'name':'/scoope/external/10876232_319058101618788_319056958285569_44901_1426_b.jpg','url':'http://santex.github.io/cymatics/scoope/external/10876232_319058101618788_319056958285569_44901_1426_b.jpg'},
+{'name':'/scoope/external/10881917_1525654891051876_5228086587233697355_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10881917_1525654891051876_5228086587233697355_n.jpg'},
+{'name':'/scoope/external/10882125_323765614481370_2881651659662617726_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10882125_323765614481370_2881651659662617726_n.jpg'},
+{'name':'/scoope/external/10882185_10204691706886115_2708576716448175048_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10882185_10204691706886115_2708576716448175048_n.jpg'},
+{'name':'/scoope/external/10891596_323723847818880_2944616199423484695_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10891596_323723847818880_2944616199423484695_n.jpg'},
+{'name':'/scoope/external/10891935_1527073700909995_301296691165163557_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10891935_1527073700909995_301296691165163557_n.jpg'},
+{'name':'/scoope/external/10897979_323150011209597_385114055528052842_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/10897979_323150011209597_385114055528052842_n.jpg'},
+{'name':'/scoope/external/1089.jpg','url':'http://santex.github.io/cymatics/scoope/external/1089.jpg'},
+{'name':'/scoope/external/1090.jpg','url':'http://santex.github.io/cymatics/scoope/external/1090.jpg'},
+{'name':'/scoope/external/1095.jpg','url':'http://santex.github.io/cymatics/scoope/external/1095.jpg'},
+{'name':'/scoope/external/1159.jpg','url':'http://santex.github.io/cymatics/scoope/external/1159.jpg'},
+{'name':'/scoope/external/1200px-Cup_Idalion_Louvre_N3454.jpg','url':'http://santex.github.io/cymatics/scoope/external/1200px-Cup_Idalion_Louvre_N3454.jpg'},
+{'name':'/scoope/external/1212.jpg','url':'http://santex.github.io/cymatics/scoope/external/1212.jpg'},
+{'name':'/scoope/external/1217.jpg','url':'http://santex.github.io/cymatics/scoope/external/1217.jpg'},
+{'name':'/scoope/external/1220.jpg','url':'http://santex.github.io/cymatics/scoope/external/1220.jpg'},
+{'name':'/scoope/external/1270.jpg','url':'http://santex.github.io/cymatics/scoope/external/1270.jpg'},
+{'name':'/scoope/external/1275.jpg','url':'http://santex.github.io/cymatics/scoope/external/1275.jpg'},
+{'name':'/scoope/external/1278.jpg','url':'http://santex.github.io/cymatics/scoope/external/1278.jpg'},
+{'name':'/scoope/external/1374124_175670695957530_747627180_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1374124_175670695957530_747627180_n.jpg'},
+{'name':'/scoope/external/1376500_652709484762150_1944261744_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1376500_652709484762150_1944261744_n.jpg'},
+{'name':'/scoope/external/1381.jpg','url':'http://santex.github.io/cymatics/scoope/external/1381.jpg'},
+{'name':'/scoope/external/1382145_183879785136621_1393075385_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1382145_183879785136621_1393075385_n.jpg'},
+{'name':'/scoope/external/1383865_185588434965756_1098674499_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1383865_185588434965756_1098674499_n.jpg'},
+{'name':'/scoope/external/1384030_234132873444645_1657276352_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1384030_234132873444645_1657276352_n.jpg'},
+{'name':'/scoope/external/1384.jpg','url':'http://santex.github.io/cymatics/scoope/external/1384.jpg'},
+{'name':'/scoope/external/1389.jpg','url':'http://santex.github.io/cymatics/scoope/external/1389.jpg'},
+{'name':'/scoope/external/1390.jpg','url':'http://santex.github.io/cymatics/scoope/external/1390.jpg'},
+{'name':'/scoope/external/1391578_182384535286146_858990886_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1391578_182384535286146_858990886_n.jpg'},
+{'name':'/scoope/external/1393688_186916434832956_674811876_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1393688_186916434832956_674811876_n.jpg'},
+{'name':'/scoope/external/1394593_186502321541034_186501528207780_53582_1162_b.jpg','url':'http://santex.github.io/cymatics/scoope/external/1394593_186502321541034_186501528207780_53582_1162_b.jpg'},
+{'name':'/scoope/external/1395.jpg','url':'http://santex.github.io/cymatics/scoope/external/1395.jpg'},
+{'name':'/scoope/external/1401.jpg','url':'http://santex.github.io/cymatics/scoope/external/1401.jpg'},
+{'name':'/scoope/external/14093222782_190f9f2c5d_o.jpg','url':'http://santex.github.io/cymatics/scoope/external/14093222782_190f9f2c5d_o.jpg'},
+{'name':'/scoope/external/1420.jpg','url':'http://santex.github.io/cymatics/scoope/external/1420.jpg'},
+{'name':'/scoope/external/1462930_190729161118350_1603112423_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1462930_190729161118350_1603112423_n.jpg'},
+{'name':'/scoope/external/1489072_10152929443654547_5741487585797121931_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1489072_10152929443654547_5741487585797121931_n.jpg'},
+{'name':'/scoope/external/1512605_198997806958152_1097071816_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1512605_198997806958152_1097071816_n.jpg'},
+{'name':'/scoope/external/1521566_211100342414565_136989568_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1521566_211100342414565_136989568_n.jpg'},
+{'name':'/scoope/external/1549554_10151907478658907_126815579_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1549554_10151907478658907_126815579_n.jpg'},
+{'name':'/scoope/external/1553196_239125116278754_6661072998297005497_o.jpg','url':'http://santex.github.io/cymatics/scoope/external/1553196_239125116278754_6661072998297005497_o.jpg'},
+{'name':'/scoope/external/1557697_201008470090419_524019152_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1557697_201008470090419_524019152_n.jpg'},
+{'name':'/scoope/external/1607055_210302565827676_622988554_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1607055_210302565827676_622988554_n.jpg'},
+{'name':'/scoope/external/1618603_10151977879938907_702946360_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1618603_10151977879938907_702946360_n.jpg'},
+{'name':'/scoope/external/1631.jpg','url':'http://santex.github.io/cymatics/scoope/external/1631.jpg'},
+{'name':'/scoope/external/1632.jpg','url':'http://santex.github.io/cymatics/scoope/external/1632.jpg'},
+{'name':'/scoope/external/1633.jpg','url':'http://santex.github.io/cymatics/scoope/external/1633.jpg'},
+{'name':'/scoope/external/1779090_10151990673118907_973512789_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1779090_10151990673118907_973512789_n.jpg'},
+{'name':'/scoope/external/1794626_10202336633475543_606724276_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/1794626_10202336633475543_606724276_n.jpg'},
+{'name':'/scoope/external/19-blue-throat8x8.jpg','url':'http://santex.github.io/cymatics/scoope/external/19-blue-throat8x8.jpg'},
+{'name':'/scoope/external/1.jpg','url':'http://santex.github.io/cymatics/scoope/external/1.jpg'},
+{'name':'/scoope/external/220px-SnowflakesWilsonBentley.jpg','url':'http://santex.github.io/cymatics/scoope/external/220px-SnowflakesWilsonBentley.jpg'},
+{'name':'/scoope/external/288861jpg.jpg','url':'http://santex.github.io/cymatics/scoope/external/288861jpg.jpg'},
+{'name':'/scoope/external/28886.jpg','url':'http://santex.github.io/cymatics/scoope/external/28886.jpg'},
+{'name':'/scoope/external/289.jpg','url':'http://santex.github.io/cymatics/scoope/external/289.jpg'},
+{'name':'/scoope/external/300px-NautilusCutawayLogarithmicSpiral.jpg','url':'http://santex.github.io/cymatics/scoope/external/300px-NautilusCutawayLogarithmicSpiral.jpg'},
+{'name':'/scoope/external/332.jpg','url':'http://santex.github.io/cymatics/scoope/external/332.jpg'},
+{'name':'/scoope/external/373.jpg','url':'http://santex.github.io/cymatics/scoope/external/373.jpg'},
+{'name':'/scoope/external/525.jpg','url':'http://santex.github.io/cymatics/scoope/external/525.jpg'},
+{'name':'/scoope/external/527847_123005531224047_2144347426_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/527847_123005531224047_2144347426_n.jpg'},
+{'name':'/scoope/external/538.jpg','url':'http://santex.github.io/cymatics/scoope/external/538.jpg'},
+{'name':'/scoope/external/544211_190117671179499_748912514_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/544211_190117671179499_748912514_n.jpg'},
+{'name':'/scoope/external/574.jpg','url':'http://santex.github.io/cymatics/scoope/external/574.jpg'},
+{'name':'/scoope/external/578126_189589251232341_2081364118_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/578126_189589251232341_2081364118_n.jpg'},
+{'name':'/scoope/external/613.jpg','url':'http://santex.github.io/cymatics/scoope/external/613.jpg'},
+{'name':'/scoope/external/661.jpg','url':'http://santex.github.io/cymatics/scoope/external/661.jpg'},
+{'name':'/scoope/external/725.jpg','url':'http://santex.github.io/cymatics/scoope/external/725.jpg'},
+{'name':'/scoope/external/7-fold_mono.jpg','url':'http://santex.github.io/cymatics/scoope/external/7-fold_mono.jpg'},
+{'name':'/scoope/external/8395600553_0803b22525_o.jpg','url':'http://santex.github.io/cymatics/scoope/external/8395600553_0803b22525_o.jpg'},
+{'name':'/scoope/external/8395604029_dc4396b663_o.jpg','url':'http://santex.github.io/cymatics/scoope/external/8395604029_dc4396b663_o.jpg'},
+{'name':'/scoope/external/8398116619_c759529e40_o.jpg','url':'http://santex.github.io/cymatics/scoope/external/8398116619_c759529e40_o.jpg'},
+{'name':'/scoope/external/884.jpg','url':'http://santex.github.io/cymatics/scoope/external/884.jpg'},
+{'name':'/scoope/external/886.jpg','url':'http://santex.github.io/cymatics/scoope/external/886.jpg'},
+{'name':'/scoope/external/988847_237301746461091_513444624_n.jpg','url':'http://santex.github.io/cymatics/scoope/external/988847_237301746461091_513444624_n.jpg'},
+{'name':'/scoope/external/aaqmtdewiwxrpnvdkeoaurgo.jpg','url':'http://santex.github.io/cymatics/scoope/external/aaqmtdewiwxrpnvdkeoaurgo.jpg'},
+{'name':'/scoope/external/abstract-hd-black-hole-thinking-high-definition-510602.jpg','url':'http://santex.github.io/cymatics/scoope/external/abstract-hd-black-hole-thinking-high-definition-510602.jpg'},
+{'name':'/scoope/external/ActivationChakrasLg.jpg','url':'http://santex.github.io/cymatics/scoope/external/ActivationChakrasLg.jpg'},
+{'name':'/scoope/external/alpha-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/alpha-brainwave-cymascope.jpg'},
+{'name':'/scoope/external/alpha-soundscape-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/alpha-soundscape-cymascope.jpg'},
+{'name':'/scoope/external/B6Zrw0nCUAEpOHN.jpg','url':'http://santex.github.io/cymatics/scoope/external/B6Zrw0nCUAEpOHN.jpg'},
+{'name':'/scoope/external/beta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/beta-brainwave-cymascope.jpg'},
+{'name':'/scoope/external/beta-brainwave-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/beta-brainwave-rainbow-cymascope.jpg'},
+{'name':'/scoope/external/beta-soundscape-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/beta-soundscape-cymascope.jpg'},
+{'name':'/scoope/external/chladnigram.jpg','url':'http://santex.github.io/cymatics/scoope/external/chladnigram.jpg'},
+{'name':'/scoope/external/crown-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/crown-chakra-cymascope.jpg'},
+{'name':'/scoope/external/cymaticscongressimage.jpg','url':'http://santex.github.io/cymatics/scoope/external/cymaticscongressimage.jpg'},
+{'name':'/scoope/external/cymaticshotelpods.jpg','url':'http://santex.github.io/cymatics/scoope/external/cymaticshotelpods.jpg'},
+{'name':'/scoope/external/cymatics.jpg','url':'http://santex.github.io/cymatics/scoope/external/cymatics.jpg'},
+{'name':'/scoope/external/cymawave.jpg','url':'http://santex.github.io/cymatics/scoope/external/cymawave.jpg'},
+{'name':'/scoope/external/delta-brainwave-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/delta-brainwave-cymascope.jpg'},
+{'name':'/scoope/external/delta-soundscape-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/delta-soundscape-cymascope.jpg'},
+{'name':'/scoope/external/diatom2.jpg','url':'http://santex.github.io/cymatics/scoope/external/diatom2.jpg'},
+{'name':'/scoope/external/diatom.jpg','url':'http://santex.github.io/cymatics/scoope/external/diatom.jpg'},
+{'name':'/scoope/external/DSCN5366.jpg','url':'http://santex.github.io/cymatics/scoope/external/DSCN5366.jpg'},
+{'name':'/scoope/external/earth-resonance.jpg','url':'http://santex.github.io/cymatics/scoope/external/earth-resonance.jpg'},
+{'name':'/scoope/external/einstein-rosen-bridge-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/einstein-rosen-bridge-cymascope.jpg'},
+{'name':'/scoope/external/Experimental_CymaScope_hex_glyph.jpg','url':'http://santex.github.io/cymatics/scoope/external/Experimental_CymaScope_hex_glyph.jpg'},
+{'name':'/scoope/external/Female_Human_Vowel_E.jpg','url':'http://santex.github.io/cymatics/scoope/external/Female_Human_Vowel_E.jpg'},
+{'name':'/scoope/external/Female_Human_Vowel_I.jpg','url':'http://santex.github.io/cymatics/scoope/external/Female_Human_Vowel_I.jpg'},
+{'name':'/scoope/external/Female_Human_Vowel_O.jpg','url':'http://santex.github.io/cymatics/scoope/external/Female_Human_Vowel_O.jpg'},
+{'name':'/scoope/external/Female_Human_Vowel_U.jpg','url':'http://santex.github.io/cymatics/scoope/external/Female_Human_Vowel_U.jpg'},
+{'name':'/scoope/external/finished-starcross-plate-1-small.jpg','url':'http://santex.github.io/cymatics/scoope/external/finished-starcross-plate-1-small.jpg'},
+{'name':'/scoope/external/flower.jpg','url':'http://santex.github.io/cymatics/scoope/external/flower.jpg'},
+{'name':'/scoope/external/fruit-of-life-in-metatrons-cube-and-the-flower-of-life.jpg','url':'http://santex.github.io/cymatics/scoope/external/fruit-of-life-in-metatrons-cube-and-the-flower-of-life.jpg'},
+{'name':'/scoope/external/fruit-of-life.jpg','url':'http://santex.github.io/cymatics/scoope/external/fruit-of-life.jpg'},
+{'name':'/scoope/external/hands-around-the-world-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/hands-around-the-world-cymascope.jpg'},
+{'name':'/scoope/external/heart-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/heart-chakra-cymascope.jpg'},
+{'name':'/scoope/external/Heart_Sutra_85mm.jpg','url':'http://santex.github.io/cymatics/scoope/external/Heart_Sutra_85mm.jpg'},
+{'name':'/scoope/external/hepp.jpg','url':'http://santex.github.io/cymatics/scoope/external/hepp.jpg'},
+{'name':'/scoope/external/Hexagonal_Water_Excitation_URL6.jpg','url':'http://santex.github.io/cymatics/scoope/external/Hexagonal_Water_Excitation_URL6.jpg'},
+{'name':'/scoope/external/hmvad.jpg','url':'http://santex.github.io/cymatics/scoope/external/hmvad.jpg'},
+{'name':'/scoope/external/Holographic_sound2.jpg','url':'http://santex.github.io/cymatics/scoope/external/Holographic_sound2.jpg'},
+{'name':'/scoope/external/HVM2big.jpg','url':'http://santex.github.io/cymatics/scoope/external/HVM2big.jpg'},
+{'name':'/scoope/external/HVM2.jpg','url':'http://santex.github.io/cymatics/scoope/external/HVM2.jpg'},
+{'name':'/scoope/external/images.jpg','url':'http://santex.github.io/cymatics/scoope/external/images.jpg'},
+{'name':'/scoope/external/IMG_8322-1024x942.jpg','url':'http://santex.github.io/cymatics/scoope/external/IMG_8322-1024x942.jpg'},
+{'name':'/scoope/external/Koch_Curve_in_Three_Dimensions_(-Delta-_fractal).jpg','url':'http://santex.github.io/cymatics/scoope/external/Koch_Curve_in_Three_Dimensions_(-Delta-_fractal).jpg'},
+{'name':'/scoope/external/Little_Grebe_lowres.jpg','url':'http://santex.github.io/cymatics/scoope/external/Little_Grebe_lowres.jpg'},
+{'name':'/scoope/external/Macro-vortex-matrix72.jpg','url':'http://santex.github.io/cymatics/scoope/external/Macro-vortex-matrix72.jpg'},
+{'name':'/scoope/external/mandala_heart_10x10.jpg','url':'http://santex.github.io/cymatics/scoope/external/mandala_heart_10x10.jpg'},
+{'name':'/scoope/external/Margaret_Watts-Hughes.jpg','url':'http://santex.github.io/cymatics/scoope/external/Margaret_Watts-Hughes.jpg'},
+{'name':'/scoope/external/Mereon_phi_star.jpg','url':'http://santex.github.io/cymatics/scoope/external/Mereon_phi_star.jpg'},
+{'name':'/scoope/external/Mereon_prime_mono.jpg','url':'http://santex.github.io/cymatics/scoope/external/Mereon_prime_mono.jpg'},
+{'name':'/scoope/external/merlinsayshello1.jpg','url':'http://santex.github.io/cymatics/scoope/external/merlinsayshello1.jpg'},
+{'name':'/scoope/external/metatron1.jpg','url':'http://santex.github.io/cymatics/scoope/external/metatron1.jpg'},
+{'name':'/scoope/external/metatron4.jpg','url':'http://santex.github.io/cymatics/scoope/external/metatron4.jpg'},
+{'name':'/scoope/external/metatron.jpg','url':'http://santex.github.io/cymatics/scoope/external/metatron.jpg'},
+{'name':'/scoope/external/metatrons-cube.jpg','url':'http://santex.github.io/cymatics/scoope/external/metatrons-cube.jpg'},
+{'name':'/scoope/external/mistypurples_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/mistypurples_sq.jpg'},
+{'name':'/scoope/external/moon-images.jpg','url':'http://santex.github.io/cymatics/scoope/external/moon-images.jpg'},
+{'name':'/scoope/external/mosaic-nature-772198-o.jpg','url':'http://santex.github.io/cymatics/scoope/external/mosaic-nature-772198-o.jpg'},
+{'name':'/scoope/external/mqdefault(10).jpg','url':'http://santex.github.io/cymatics/scoope/external/mqdefault(10).jpg'},
+{'name':'/scoope/external/navel-sacral-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/navel-sacral-chakra-cymascope.jpg'},
+{'name':'/scoope/external/oceanblues_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/oceanblues_sq.jpg'},
+{'name':'/scoope/external/ondasshumann06_06.jpg','url':'http://santex.github.io/cymatics/scoope/external/ondasshumann06_06.jpg'},
+{'name':'/scoope/external/pianonotes.jpg','url':'http://santex.github.io/cymatics/scoope/external/pianonotes.jpg'},
+{'name':'/scoope/external/Picture-050.jpg','url':'http://santex.github.io/cymatics/scoope/external/Picture-050.jpg'},
+{'name':'/scoope/external/radio.jpg','url':'http://santex.github.io/cymatics/scoope/external/radio.jpg'},
+{'name':'/scoope/external/radiolaria.jpg','url':'http://santex.github.io/cymatics/scoope/external/radiolaria.jpg'},
+{'name':'/scoope/external/Ray_Pierottiart2.jpg','url':'http://santex.github.io/cymatics/scoope/external/Ray_Pierottiart2.jpg'},
+{'name':'/scoope/external/reiki-chant-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/reiki-chant-cymascope.jpg'},
+{'name':'/scoope/external/root-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/root-chakra-cymascope.jpg'},
+{'name':'/scoope/external/schematic_redone.jpg','url':'http://santex.github.io/cymatics/scoope/external/schematic_redone.jpg'},
+{'name':'/scoope/external/Scr1.jpg','url':'http://santex.github.io/cymatics/scoope/external/Scr1.jpg'},
+{'name':'/scoope/external/Snail_sound_image_72dpi.jpg','url':'http://santex.github.io/cymatics/scoope/external/Snail_sound_image_72dpi.jpg'},
+{'name':'/scoope/external/solarmode.jpg','url':'http://santex.github.io/cymatics/scoope/external/solarmode.jpg'},
+{'name':'/scoope/external/solar-plexus-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/solar-plexus-chakra-cymascope.jpg'},
+{'name':'/scoope/external/Song_of_the_Sun.jpg','url':'http://santex.github.io/cymatics/scoope/external/Song_of_the_Sun.jpg'},
+{'name':'/scoope/external/sound1.jpg','url':'http://santex.github.io/cymatics/scoope/external/sound1.jpg'},
+{'name':'/scoope/external/Spherism.jpg','url':'http://santex.github.io/cymatics/scoope/external/Spherism.jpg'},
+{'name':'/scoope/external/Stanford_SoundBubble_crop.jpg','url':'http://santex.github.io/cymatics/scoope/external/Stanford_SoundBubble_crop.jpg'},
+{'name':'/scoope/external/StanfordUni_Bubble.jpg','url':'http://santex.github.io/cymatics/scoope/external/StanfordUni_Bubble.jpg'},
+{'name':'/scoope/external/Star_3831_A.jpg','url':'http://santex.github.io/cymatics/scoope/external/Star_3831_A.jpg'},
+{'name':'/scoope/external/star-chi-hydrae-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/star-chi-hydrae-cymascope.jpg'},
+{'name':'/scoope/external/star-pg1159-035-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/star-pg1159-035-cymascope.jpg'},
+{'name':'/scoope/external/star-rr-lyrae-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/star-rr-lyrae-cymascope.jpg'},
+{'name':'/scoope/external/star-sun-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/star-sun-cymascope.jpg'},
+{'name':'/scoope/external/summerpinks_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/summerpinks_sq.jpg'},
+{'name':'/scoope/external/sungolds_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/sungolds_sq.jpg'},
+{'name':'/scoope/external/tangolds_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/tangolds_sq.jpg'},
+{'name':'/scoope/external/theta-soundscape-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/theta-soundscape-cymascope.jpg'},
+{'name':'/scoope/external/third-eye-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/third-eye-chakra-cymascope.jpg'},
+{'name':'/scoope/external/thirdeyechakracymatic.jpg','url':'http://santex.github.io/cymatics/scoope/external/thirdeyechakracymatic.jpg'},
+{'name':'/scoope/external/Third_Eye_Chakra_text.jpg','url':'http://santex.github.io/cymatics/scoope/external/Third_Eye_Chakra_text.jpg'},
+{'name':'/scoope/external/throat-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/external/throat-chakra-cymascope.jpg'},
+{'name':'/scoope/external/thumbnail-173x300.jpg','url':'http://santex.github.io/cymatics/scoope/external/thumbnail-173x300.jpg'},
+{'name':'/scoope/external/trillo2.jpg','url':'http://santex.github.io/cymatics/scoope/external/trillo2.jpg'},
+{'name':'/scoope/external/trillo.jpg','url':'http://santex.github.io/cymatics/scoope/external/trillo.jpg'},
+{'name':'/scoope/external/veilgrays_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/veilgrays_sq.jpg'},
+{'name':'/scoope/external/wildflowerblues_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/wildflowerblues_sq.jpg'},
+{'name':'/scoope/external/winterreds_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/winterreds_sq.jpg'},
+{'name':'/scoope/external/yellowgolds_sq.jpg','url':'http://santex.github.io/cymatics/scoope/external/yellowgolds_sq.jpg'},
+{'name':'/scoope/external/Yves_Couder_experiment.jpg','url':'http://santex.github.io/cymatics/scoope/external/Yves_Couder_experiment.jpg'},
+{'name':'/scoope/freqencies/1200px-Cup_Idalion_Louvre_N3454.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/1200px-Cup_Idalion_Louvre_N3454.jpg'},
+{'name':'/scoope/freqencies/1512605_198997806958152_1097071816_n.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/1512605_198997806958152_1097071816_n.jpg'},
+{'name':'/scoope/freqencies/1618603_10151977879938907_702946360_n.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/1618603_10151977879938907_702946360_n.jpg'},
+{'name':'/scoope/freqencies/799px-seed_of_life_stages.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/799px-seed_of_life_stages.jpg'},
+{'name':'/scoope/freqencies/B__D_XtWAAARg2J.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/B__D_XtWAAARg2J.jpg'},
+{'name':'/scoope/freqencies/beta-brainwave-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/beta-brainwave-rainbow-cymascope.jpg'},
+{'name':'/scoope/freqencies/blume_des_lebens_1.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/blume_des_lebens_1.jpg'},
+{'name':'/scoope/freqencies/chakra-rainbow-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/chakra-rainbow-cymascope.jpg'},
+{'name':'/scoope/freqencies/cyma.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/cyma.jpg'},
+{'name':'/scoope/freqencies/cymatics_image_4_blues.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/cymatics_image_4_blues.jpg'},
+{'name':'/scoope/freqencies/cymatix.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/cymatix.jpg'},
+{'name':'/scoope/freqencies/DOP-cymatics-12.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/DOP-cymatics-12.jpg'},
+{'name':'/scoope/freqencies/DOP-cymatics-21.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/DOP-cymatics-21.jpg'},
+{'name':'/scoope/freqencies/flower-cells.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/flower-cells.jpg'},
+{'name':'/scoope/freqencies/flower-egg.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/flower-egg.jpg'},
+{'name':'/scoope/freqencies/flower-fruit.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/flower-fruit.jpg'},
+{'name':'/scoope/freqencies/flower-geo.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/flower-geo.jpg'},
+{'name':'/scoope/freqencies/heart-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/heart-chakra-cymascope.jpg'},
+{'name':'/scoope/freqencies/mary.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/mary.jpg'},
+{'name':'/scoope/freqencies/platonicballs.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/platonicballs.jpg'},
+{'name':'/scoope/freqencies/stuartcymaticsaturn507.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/stuartcymaticsaturn507.jpg'},
+{'name':'/scoope/freqencies/wasserklangbild_ton_d.jpg','url':'http://santex.github.io/cymatics/scoope/freqencies/wasserklangbild_ton_d.jpg'},
+{'name':'/scoope/galactic/star-chi-hydrae-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/galactic/star-chi-hydrae-cymascope.jpg'},
+{'name':'/scoope/galactic/star-pg1159-035-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/galactic/star-pg1159-035-cymascope.jpg'},
+{'name':'/scoope/galactic/star-rr-lyrae-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/galactic/star-rr-lyrae-cymascope.jpg'},
+{'name':'/scoope/galactic/star-sun-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/galactic/star-sun-cymascope.jpg'},
+{'name':'/scoope/heart/heart-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/heart/heart-chakra-cymascope.jpg'},
+{'name':'/scoope/heart/heart-sutra-mandala-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/heart/heart-sutra-mandala-cymascope.jpg'},
+{'name':'/scoope/spirit/third-eye-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/spirit/third-eye-chakra-cymascope.jpg'},
+{'name':'/scoope/throat/throat-chakra-cymascope.jpg','url':'http://santex.github.io/cymatics/scoope/throat/throat-chakra-cymascope.jpg'},
+{'name':'/scoope/tools/ASR-JSR-CymaScope_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/ASR-JSR-CymaScope_URL.jpg'},
+{'name':'/scoope/tools/Chromium_CymaScope.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Chromium_CymaScope.jpg'},
+{'name':'/scoope/tools/Cuneyt_sand_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Cuneyt_sand_URL.jpg'},
+{'name':'/scoope/tools/CymaPiano_App_NewProducts.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaPiano_App_NewProducts.jpg'},
+{'name':'/scoope/tools/cymaplatebanner_sq1.jpg','url':'http://santex.github.io/cymatics/scoope/tools/cymaplatebanner_sq1.jpg'},
+{'name':'/scoope/tools/CymaScope_Geometry_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaScope_Geometry_URL.jpg'},
+{'name':'/scoope/tools/CymaScope_Pro_clean_shot_title2.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaScope_Pro_clean_shot_title2.jpg'},
+{'name':'/scoope/tools/CymaScope_Pro.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaScope_Pro.jpg'},
+{'name':'/scoope/tools/CymaScope_proto_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaScope_proto_URL.jpg'},
+{'name':'/scoope/tools/CymaScopeSE.jpg','url':'http://santex.github.io/cymatics/scoope/tools/CymaScopeSE.jpg'},
+{'name':'/scoope/tools/DaVinci_Code_shoot2.jpg','url':'http://santex.github.io/cymatics/scoope/tools/DaVinci_Code_shoot2.jpg'},
+{'name':'/scoope/tools/Dodecadon_CymaScope_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Dodecadon_CymaScope_URL.jpg'},
+{'name':'/scoope/tools/dr.jpg','url':'http://santex.github.io/cymatics/scoope/tools/dr.jpg'},
+{'name':'/scoope/tools/Early_Water_Experiments_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Early_Water_Experiments_URL.jpg'},
+{'name':'/scoope/tools/Holographic_sound2.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Holographic_sound2.jpg'},
+{'name':'/scoope/tools/johnkingschambe.jpg','url':'http://santex.github.io/cymatics/scoope/tools/johnkingschambe.jpg'},
+{'name':'/scoope/tools/johnstuff.jpg','url':'http://santex.github.io/cymatics/scoope/tools/johnstuff.jpg'},
+{'name':'/scoope/tools/JSR_&_Steve.jpg','url':'http://santex.github.io/cymatics/scoope/tools/JSR_&_Steve.jpg'},
+{'name':'/scoope/tools/LabJSR.jpg','url':'http://santex.github.io/cymatics/scoope/tools/LabJSR.jpg'},
+{'name':'/scoope/tools/Laboratory_CymaScope_App_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Laboratory_CymaScope_App_URL.jpg'},
+{'name':'/scoope/tools/mary.jpg','url':'http://santex.github.io/cymatics/scoope/tools/mary.jpg'},
+{'name':'/scoope/tools/NASA_photo1REV.jpg','url':'http://santex.github.io/cymatics/scoope/tools/NASA_photo1REV.jpg'},
+{'name':'/scoope/tools/NationalGeo_Tony&Dave.jpg','url':'http://santex.github.io/cymatics/scoope/tools/NationalGeo_Tony&Dave.jpg'},
+{'name':'/scoope/tools/Prototype_CymaScope_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Prototype_CymaScope_URL.jpg'},
+{'name':'/scoope/tools/Rocket_CymaScope_URL.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Rocket_CymaScope_URL.jpg'},
+{'name':'/scoope/tools/Rosslyn_CymaPlate_pattern_crop.jpg','url':'http://santex.github.io/cymatics/scoope/tools/Rosslyn_CymaPlate_pattern_crop.jpg'}
+];
+
+
+      </script>
+      <script>
+        new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+      </script>
+
+<br />
+<br />
+<br />       <center>
+<div id="global-tax-box">if you like to help?  <b>bitcoins</b> go here: <b>1FaWma1n8JSQiAY2WrMvjZn1q7Eu5mmt7F</b> &nbsp; &nbsp; download
+image & videos &nbsp; NASA:
+<a href="https://www.hq.nasa.gov/alsj/a17/AS17-136-20863.jpg" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://eol.jsc.nasa.gov/DatabaseImages/ISD/highres/AS09/AS09-23-3500.JPG" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://www.hq.nasa.gov/alsj/a16/AS16-112-18214.jpg" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/cL7N4HnyHB" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/e7woQvOX4y" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/w8yATJtX7I" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/FO5m74hOjp" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/v3mX9UZEym" ><i class="red fa  fa-external-link-square"></i></a>
+<a href="https://t.co/NA4cMQxGO8" ><i class="red fa  fa-external-link-square"></i></a>
+UFO's
+<a href="http://space-man.de/straped/bootstrap/img/ufos/1QFToHU8Di4.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/1uk5pjNfhA8.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/3-sjsx_lvsg.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/34818_submitter_file1__Copy_of_VID_20111222_103632-1.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/3fkL398iDl0.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/4Q_vbv_WOdM.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/4lOQpSfj-w0.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/87PRVP4EQAo.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/8__j4vYDlhQ.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/ADBQ1wrC5h8.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/AWkKyL4n6jE.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/AkLKZxFdOKQ.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/C3nlO_gNA6g.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/CnXm0U_L8Fs.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+
+<a href="http://space-man.de/straped/bootstrap/img/ufos/Hfy2JMcyMyA.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/KKn9IcgtYQ8.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/KOXcxC25-H8.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+<a href="http://space-man.de/straped/bootstrap/img/ufos/KdtIVndBmr4.mp4" target="_new"><i class="red fa  fa-external-link-square"></i></a>
+E.T's:
+<a href="http://space-man.de/straped/bootstrap/img/ets/0aRn6uiMxDI.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/0lwv2WTaSyc.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/0vBP7V6D9BM.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/4rzt2taM2Qc.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/5LFKz72ZB4A.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/6MVpnOpCXFM.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/7-0iOfYF6o0.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/7ns7MRtCMw0.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/8SXb64S59kM.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/C25RTDXFNWY.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/CD4ISlzA9RM.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/CSHIEQNEaP8.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/FkNfNUJl6dI.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/G2q45FCWECY.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/G4besX1rz0o.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/IchHe98_0qk.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/JVvAwr85KT0.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/KD5N-ojrJUw.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/MkqGaVkmr5A.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/NCt2Frq2iW8.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/P1AP5xQ3PdE.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/QgYQSKcrCfE.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/b5EtXDOfUXA.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/d_uqAZW5YF0.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/fMv85lRAmuk.mp4"><i class="red fa  fa-external-link-square"></i>
+<a href="http://space-man.de/straped/bootstrap/img/ets/ghqlXdJ4etI.mp4"><i class="red fa  fa-external-link-square"></i>
+
+</div>
+<script>
+
+
+
+
+
+
+var param =  URLParser(url).getParam('param');
+
+
+
+$(document).ready(function() {
+
+
+
+  $("#snippets").append("<b>snippets</b>");
+  var snipp = $("#snippets");
+  //loadURL("/ajax/all",snipp);
+  //loadURL("/ajax/all",snipp);
+
+  $("#datafiles").append("<b></b>");
+  var datafiles = $("#datafiles");
+ // loadURL("/data/all",datafiles);
+
+
+    // RESET WIDGETS
+    $('#snippets li').click(function(e) {
+
+        var $this = $(this);
+
+
+  document.location.href=$(this).text();
+        e.preventDefault();
+
+    });
+    });
+
+</script>
+      </center>
+    </body>
+  </html>
